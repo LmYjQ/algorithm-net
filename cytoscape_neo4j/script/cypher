@@ -1,0 +1,4 @@
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM "file:///model.csv" AS row
+CREATE (:Model {modelName: row.modelName, modelID: row.modelID, modelLink:row.modelLink});
+
