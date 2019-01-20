@@ -2,3 +2,9 @@ USING PERIODIC COMMIT
 LOAD CSV WITH HEADERS FROM "file:///model.csv" AS row
 CREATE (:Model {modelName: row.modelName, modelID: row.modelID, modelLink:row.modelLink});
 
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM "file:///model_extend.csv" AS row
+MATCH (model:Model {modelID: row.from_id})
+MATCH (modelExtend:Model {modelID: row.to_id})
+MERGE (model)-[et:EXTEND_TO]->(modelExtend)
+ON CREATE SET et.how=row.property;
