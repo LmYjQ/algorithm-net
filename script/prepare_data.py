@@ -1,10 +1,24 @@
 import pandas as pd
 import argparse
-import sys
+import os,sys
 
 sheet_names = []
 inpath = 
 out_folder = 
+neo4j_path = '/Users/maerkesu/Downloads/neo4j-community-3.5.1'
+
+def cmd_proc():
+    print(cmd)
+    os.system(cmd)
+
+def stop_neo4j():
+    cmd = "{}  stop".format(os.path.join(neo4j_path,'bin','neo4j'))
+    cmd_proc(cmd)
+    cmd = "rm {}".format(os.path.join(neo4j_path,'import','*')
+    cmd_proc(cmd)
+
+def get_data():
+
 
 def main():
    # inpath = sys.argv[1]
