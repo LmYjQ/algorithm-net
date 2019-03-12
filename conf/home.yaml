@@ -1,6 +1,8 @@
 node:
+  file_name: alg_nodes.xlsx
   sheet_names: model,optimizer,loss,math,distance 
 edge:
+  file_name: alg_edges.xlsx
   sheet_names: extend
 path:
   inpath: '/Users/maerkesu/Downloads/' # where are the node and edge file?

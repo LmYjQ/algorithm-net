@@ -19,13 +19,15 @@ def stop_neo4j():
     cmd = "rm {}".format(os.path.join(neo4j_path,'import','*')
     cmd_proc(cmd)
 
-def get_data():
+def format_raw_file(conf):
+    df = pd.read_excel(path)
 
 
 def main():
    # inpath = sys.argv[1]
    # out_folder = sys.argv[2]
-    df = pd.read_excel(inpath)
+    conf_file = sys.argv[1]
+    
     
 
 
