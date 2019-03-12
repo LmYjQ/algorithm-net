@@ -1,0 +1,8 @@
+node:
+  sheet_names: model,optimizer,loss,math,distance 
+edge:
+  sheet_names: extend
+path:
+  inpath: '/Users/a123/Downloads/' # where are the node and edge file?
+  neo4j_path: '/Users/a123/Downloads/neo4j-community-3.4.1' 
+
