@@ -3,9 +3,11 @@ import argparse
 import os,sys
 
 sheet_names = []
-inpath = 
-out_folder = 
-neo4j_path = '/Users/maerkesu/Downloads/neo4j-community-3.5.1'
+inpath =  '/Users/maerkesu/Downloads/'
+neo4j_path = '/Users/maerkesu/Downloads/neo4j-community-3.5.1' 
+
+inpath = '/Users/a123/Downloads/'
+neo4j_path = '/Users/a123/Downloads/neo4j-community-3.4.1'
 
 def cmd_proc():
     print(cmd)
