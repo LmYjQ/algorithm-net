@@ -1,10 +1,11 @@
 node:
+  obj_type: node
   file_name: alg_nodes.xlsx
   sheet_names: model,optimizer,loss,math,distance 
 edge:
+  obj_type: edge
   file_name: alg_edges.xlsx
-  sheet_names: extend
-  link_objs: extend:model#model
+  sheet_names: extend:Model#model-EXTEND_TO-ModelExtend#model
 path:
   inpath: '/Users/maerkesu/Downloads/' # where are the node and edge file?
   neo4j_path: '/Users/maerkesu/Downloads/neo4j-community-3.5.1' 
